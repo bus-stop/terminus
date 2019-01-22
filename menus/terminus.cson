@@ -1,0 +1,68 @@
+'context-menu':
+  '.terminus .terminus-status-icon': [
+    {label: 'Red', command: 'terminus:status-red'},
+    {label: 'Orange', command: 'terminus:status-orange'},
+    {label: 'Yellow', command: 'terminus:status-yellow'},
+    {label: 'Green', command: 'terminus:status-green'},
+    {label: 'Blue', command: 'terminus:status-blue'},
+    {label: 'Purple', command: 'terminus:status-purple'},
+    {label: 'Pink', command: 'terminus:status-pink'},
+    {label: 'Cyan', command: 'terminus:status-cyan'},
+    {label: 'Magenta', command: 'terminus:status-magenta'},
+    {label: 'Default', command: 'terminus:status-default'},
+    {type: 'separator'},
+    {label: 'Hide', command: 'terminus:context-hide'},
+    {label: 'Rename', command: 'terminus:context-rename'},
+    {label: 'Close', command: 'terminus:context-close'}
+  ]
+  '.terminus .terminal': [
+    {label: 'Copy', command: 'terminus:copy'},
+    {label: 'Paste', command: 'terminus:paste'},
+    {type: 'separator'},
+    {label: 'Hide', command: 'terminus:hide'},
+    {label: 'Close', command: 'terminus:close'}
+    {type: 'separator'}
+    {label: "Clear", command: 'terminus:clear'}
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'terminus'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'terminus:toggle'
+        },
+        {
+          'label': 'Focus'
+          'command': 'terminus:focus'
+        },
+        {
+          'label': 'New Terminal'
+          'command': 'terminus:new'
+        },
+        {
+          'label': 'Previous Terminal'
+          'command': 'terminus:prev'
+        },
+        {
+          'label': 'Next Terminal'
+          'command': 'terminus:next'
+        },
+        {
+          'label': 'Toggle Fullscreen'
+          'command': 'terminus:fullscreen'
+        },
+        {
+          'label': 'Close Terminal'
+          'command': 'terminus:close'
+        },
+        {
+          'label': 'Close All Terminals'
+          'command': 'terminus:close-all'
+        }
+      ]
+    ]
+  }
+]

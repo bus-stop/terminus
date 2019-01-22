@@ -1,0 +1,26 @@
+'.platform-darwin atom-workspace':
+  'cmd-shift-t': 'terminus:new'
+  'cmd-shift-j': 'terminus:prev'
+  'cmd-shift-k': 'terminus:next'
+  'cmd-shift-x': 'terminus:close'
+  'cmd-alt-f': 'terminus:focus'
+  'ctrl-enter': 'terminus:insert-selected-text'
+  'ctrl-`': 'terminus:toggle'
+  'ctrl-alt-enter': 'terminus:insert-selected-text'
+
+'.platform-linux atom-workspace, .platform-win32 atom-workspace':
+  'alt-shift-t': 'terminus:new'
+  'alt-shift-j': 'terminus:prev'
+  'alt-shift-k': 'terminus:next'
+  'alt-shift-x': 'terminus:close'
+  'ctrl-enter': 'terminus:insert-selected-text'
+  'ctrl-`': 'terminus:toggle'
+  'ctrl-alt-f': 'terminus:focus'
+
+'.platform-darwin .terminus .terminal':
+  'cmd-c': 'terminus:copy'
+  'cmd-v': 'terminus:paste'
+
+'.platform-linux .terminus .terminal, .platform-win32 .terminus .terminal':
+  'alt-v': 'terminus:paste'
+  'alt-c': 'terminus:copy'

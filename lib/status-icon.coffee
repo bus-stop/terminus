@@ -7,7 +7,7 @@ class StatusIcon extends HTMLElement
   active: false
 
   initialize: (@terminalView) ->
-    @classList.add 'pio-terminal-status-icon'
+    @classList.add 'terminus-status-icon'
 
     @icon = document.createElement('i')
     @icon.classList.add 'icon', 'icon-terminal'
@@ -32,7 +32,7 @@ class StatusIcon extends HTMLElement
   setupTooltip: ->
 
     onMouseEnter = (event) =>
-      return if event.detail is 'platformio-ide-terminal'
+      return if event.detail is 'terminus'
       @updateTooltip()
 
     @mouseEnterSubscription = dispose: =>
@@ -52,7 +52,7 @@ class StatusIcon extends HTMLElement
           show: 1000
           hide: 100
 
-    @dispatchEvent(new CustomEvent('mouseenter', bubbles: true, detail: 'platformio-ide-terminal'))
+    @dispatchEvent(new CustomEvent('mouseenter', bubbles: true, detail: 'terminus'))
 
   removeTooltip: ->
     @tooltip.dispose() if @tooltip
@@ -97,4 +97,4 @@ class StatusIcon extends HTMLElement
       @name.innerHTML = name
       @terminalView.emit 'did-change-title'
 
-module.exports = document.registerElement('pio-terminal-status-icon', prototype: StatusIcon.prototype, extends: 'li')
+module.exports = document.registerElement('terminus-status-icon', prototype: StatusIcon.prototype, extends: 'li')

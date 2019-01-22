@@ -1,11 +1,13 @@
 {
-  "name": "platformio-ide-terminal",
-  "main": "./lib/platformio-ide-terminal",
+  "name": "terminus",
+  "title": "Terminus",
+  "main": "./lib/terminus",
   "version": "2.10.0",
-  "description": "A terminal package for Atom, complete with themes, API and more for PlatformIO IDE. Fork of terminal-plus.",
-  "author": "Jeremy Ebneyamin",
+  "description": "A terminal package for Atom, complete with themes, API. Fork of platformio-ide-terminal.",
+  "author": "bus-stop and contributors",
   "keywords": [
-    "PlatformIO",
+    "terminus",
+    "platformio-ide-terminal",
     "terminal-plus",
     "terminal",
     "iterm",
@@ -18,7 +20,20 @@
     "console",
     "powershell"
   ],
+  "bugs": { 
+    "url": "https://github.com/bus-stop/terminus/issues/new"
+  },
   "contributors": [
+    {
+      "name": "bus-stop",
+      "email": "no@contact.io",
+      "url": "https://bus-stop.github.io/"
+    },
+    {
+      "name": "Jeremy Ebneyamin",
+      "email": "ebneyaminj@gmail.com",
+      "url": "https://github.com/jeremyramin"
+    },
     {
       "name": "Ivan Kravets",
       "email": "me@ikravets.com",
@@ -31,11 +46,11 @@
     },
     {
       "name": "The Community Contributors",
-      "url": "https://github.com/platformio/platformio-atom-ide-terminal/graphs/contributors"
+      "url": "https://github.com/bus-stop/terminus/graphs/contributors"
     }
   ],
-  "homepage": "https://atom.io/packages/platformio-ide-terminal",
-  "repository": "https://github.com/platformio/platformio-atom-ide-terminal",
+  "homepage": "https://atom.io/packages/terminus",
+  "repository": "https://github.com/bus-stop/terminus",
   "license": "MIT",
   "engines": {
     "atom": ">=1.12.2 <2.0.0"
@@ -57,10 +72,10 @@
     }
   },
   "providedServices": {
-    "platformioIDETerminal": {
-      "description": "PlatformIO IDE Terminal API",
+    "Terminus": {
+      "description": "Terminus API",
       "versions": {
-        "1.1.0": "providePlatformIOIDETerminal"
+        "1.1.0": "provideTerminus"
       }
     },
     "runInTerminal": {
