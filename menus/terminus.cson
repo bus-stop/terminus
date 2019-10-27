@@ -28,7 +28,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'terminus'
+      'label': 'Terminus'
       'submenu': [
         {
           'label': 'Toggle'
