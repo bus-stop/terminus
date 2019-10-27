@@ -3,7 +3,7 @@
   "title": "Terminus",
   "main": "./lib/terminus",
   "version": "2.10.0",
-  "description": "A terminal package for Atom, complete with themes, API. Fork of platformio-ide-terminal.",
+  "description": "A terminal package for Atom, complete with themes and more. A fork of platformio-atom-ide-terminal.",
   "author": "bus-stop and contributors",
   "keywords": [
     "terminus",
@@ -68,20 +68,6 @@
     "status-bar": {
       "versions": {
         "^1.0.0": "consumeStatusBar"
-      }
-    }
-  },
-  "providedServices": {
-    "Terminus": {
-      "description": "Terminus API",
-      "versions": {
-        "1.1.0": "provideTerminus"
-      }
-    },
-    "runInTerminal": {
-      "description": "Deprecated API for PlatformIO IDE 1.0",
-      "versions": {
-        "0.14.5": "provideRunInTerminal"
       }
     }
   }

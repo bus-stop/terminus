@@ -7,23 +7,6 @@ module.exports =
     @statusBarTile?.destroy()
     @statusBarTile = null
 
-  provideTerminus: ->
-    updateProcessEnv: (variables) ->
-      for name, value of variables
-        process.env[name] = value
-    run: (commands) =>
-      @statusBarTile.runCommandInNewTerminal commands
-    getTerminalViews: () =>
-      @statusBarTile.terminalViews
-    open: () =>
-      @statusBarTile.runNewTerminal()
-
-  provideRunInTerminal: ->
-    run: (commands) =>
-      @statusBarTile.runCommandInNewTerminal commands
-    getTerminalViews: () =>
-      @statusBarTile.terminalViews
-
   consumeStatusBar: (statusBarProvider) ->
     @statusBarTile = new (require './status-bar')(statusBarProvider)
 
