@@ -53,13 +53,13 @@
   "repository": "https://github.com/bus-stop/terminus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.12.2 <2.0.0"
+    "atom": ">=1.41.0 <2.0.0"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
-    "node-pty-prebuilt-multiarch": "0.9.0-beta21.legacy",
+    "node-pty-prebuilt-multiarch": "^0.9.0",
     "term.js": "https://github.com/jeremyramin/term.js/tarball/master",
-    "underscore": "^1.8.3"
+    "underscore": "^1.9.1"
   },
   "activationHooks": [
     "core:loaded-shell-environment"
