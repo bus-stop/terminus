@@ -8,16 +8,16 @@
 <br>
 <p align="center">
   <a href="https://github.com/bus-stop/terminus/tags">
-    <img src="https://img.shields.io/github/tag/bus-stop/terminus.svg?label=version&style=flat" alt="version">
+    <img src="https://img.shields.io/github/tag/bus-stop/terminus.svg?label=version&style=for-the-badge" alt="version">
   </a>
   <a href="https://github.com/bus-stop/terminus/stargazers">
-    <img src="https://img.shields.io/github/stars/bus-stop/terminus.svg?style=flat" alt="stars">
+    <img src="https://img.shields.io/github/stars/bus-stop/terminus.svg?style=for-the-badge" alt="stars">
   </a>
   <a href="https://github.com/bus-stop/terminus/network">
-    <img src="https://img.shields.io/github/forks/bus-stop/terminus.svg?style=flat" alt="forks">
+    <img src="https://img.shields.io/github/forks/bus-stop/terminus.svg?style=for-the-badge" alt="forks">
   </a>
   <a href="https://david-dm.org/bus-stop/terminus">
-    <img src="https://david-dm.org/bus-stop/terminus/status.svg?label=dependencies&style=flat" alt="dependencies">
+    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=dependencies&style=for-the-badge" alt="dependencies">
   </a>
 </p>
 <h3 align="center">A terminal package for Atom, complete with themes and more...&nbsp;❤️</h3>
@@ -27,11 +27,11 @@
 
 ![demo](./resources/demo.gif)
 
-*[Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui) with [Atom Material Syntax](https://atom.io/themes/atom-material-syntax) and our Homebrew theme.*
+*[Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui) with [Atom Material Syntax](https://atom.io/themes/atom-material-syntax) and the included Homebrew theme.*
 
 # Developers
 
-This project needs developers to survive, please check out our code and help out.
+This project is looking for and needs developers to survive, please check out our code and help out.
 
 ## Install
 Ready to install?
