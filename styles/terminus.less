@@ -14,13 +14,24 @@
     padding: 0;
     margin: 0;
   }
-  .icon::before {
-    margin: 0;
-    padding: 0;
+  .icon {
+    &::before {
+      margin: 0;
+      padding: 0;
+    }
   }
-  .icon-x::before {
-    content: '\f081' !important;
-    line-height: normal;
+  .icon-x {
+    &::before {
+      content: '\f081' !important;
+      top: -.01em;
+      line-height: normal;
+    }
+  }
+  .icon-screen-full {
+    &::before {
+      content: "\f066" !important;
+      top: -.1em;
+    }
   }
 
   &.terminal-view {
