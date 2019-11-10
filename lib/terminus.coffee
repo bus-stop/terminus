@@ -10,6 +10,17 @@ module.exports =
   consumeStatusBar: (statusBarProvider) ->
     @statusBarTile = new (require './status-bar')(statusBarProvider)
 
+  provideTerminal: ->
+    updateProcessEnv: (variables) ->
+      for name, value of variables
+        process.env[name] = value
+    run: (commands) =>
+      @statusBarTile.runCommandInNewTerminal commands
+    getTerminalViews: () =>
+      @statusBarTile.terminalViews
+    open: () =>
+      @statusBarTile.runNewTerminal()
+
   config:
     toggles:
       type: 'object'
