@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=dependencies&style=for-the-badge" alt="dependencies">
   </a>
 </p>
-<h3 align="center">A terminal package for Atom, complete with themes and more...&nbsp;❤️</h3>
+<h3 align="center">A terminal package for Atom, complete with themes, API and more...&nbsp;❤️</h3>
 <h5 align="center">A fork of <a href="https://github.com/platformio/platformio-atom-ide-terminal">platformio/platformio-atom-ide-terminal<a/>
 </h5>
 <br>
