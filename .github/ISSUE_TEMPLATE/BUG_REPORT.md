@@ -1,5 +1,13 @@
+---
+name: "\U0001F41B Bug report"
+about: Report a problem encountered while using this style
+title: '[BR] '
+labels: 'bug-report :bug:'
+assignees: ''
+
+---
 <!-- Fill all fields of the issue template, without, issue will likely be closed.
-Tick the appropriate box by adding an x in between the [] to ID the status-->
+Tick the appropriate box by adding an x in between the [] e.g. [x] to ID the status-->
 - [ ] I have reset Atom to defaults prior to submitting report.
 - [ ] I have not reset Atom to defaults prior to submitting report.
 ### Description
