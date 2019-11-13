@@ -56,15 +56,27 @@
     "console",
     "powershell"
   ],
+  "scripts": {
+    "test": "atom --test spec",
+    "lint": "eslint .",
+    "semantic-release": "semantic-release"
+  },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
     "node-pty-prebuilt-multiarch": "^0.9.0",
     "term.js": "https://github.com/bus-stop/term.js/tarball/master",
     "underscore": "^1.9.1"
   },
+  "devDependencies": {
+    "@semantic-release/apm-config": "^6.0.2",
+    "atom-jasmine3-test-runner": "^4.3.9",
+    "eslint": "^6.6.0",
+    "semantic-release": "^15.13.30"
+  },
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
+  "atomTestRunner": "./spec/runner.js",
   "consumedServices": {
     "status-bar": {
       "versions": {
