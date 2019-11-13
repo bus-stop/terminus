@@ -140,6 +140,15 @@ module.exports =
           default: 'standard'
           enum: [
             'standard',
+            'homebrew',
+            'atom-dark',
+            'atom-light',
+            'one-dark',
+            'one-light',
+            'base16-tomorrow-dark',
+            'base16-tomorrow-light',
+            'solarized-dark',
+            'solarized-light',
             'inverse',
             'linux',
             'grass',
@@ -154,11 +163,13 @@ module.exports =
             'solarized-dark',
             'solid-colors',
             'dracula',
-            'one-dark',
             'christmas',
             'predawn',
             'city-lights',
-            'solarized-light'
+            'solarized-light',
+            'base16-tomorrow-dark',
+            'base16-tomorrow-light'
+            'city-lights'
           ]
     ansiColors:
       type: 'object'
