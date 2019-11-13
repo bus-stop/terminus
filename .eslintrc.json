@@ -1,24 +1,25 @@
 {
-	"env": {
-		"es6": true,
-		"node": true,
-		"browser": true,
-		"jasmine": true,
-		"atomtest": true
-	},
-	"parserOptions": {
-		"sourceType": "module",
-		"ecmaVersion": 8,
-		"ecmaFeatures": {
-			"impliedStrict": true
-		}
-	},
-	"globals": {
-		"atom": false
-	},
-	"extends": "eslint:recommended",
-	"rules": {
-		"quotes": 1,
-		"semi": 2
-	}
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jasmine": true,
+    "atomtest": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "globals": {
+    "atom": false
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "quotes": "warn",
+    "semi": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }]
+  }
 }
