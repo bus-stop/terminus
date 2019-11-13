@@ -123,7 +123,7 @@ class TerminusView extends View
 
   updateToolbarVisibility: =>
     if !@shouldUseDock
-      @showToolbar = atom.config.get('platformio-ide-terminal.toggles.showToolbar')
+      @showToolbar = atom.config.get('terminus.toggles.showToolbar')
       if @showToolbar
         @toolbar.css 'display', 'block'
       else
