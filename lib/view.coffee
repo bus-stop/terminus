@@ -8,8 +8,12 @@ InputDialog = null
 path = require 'path'
 os = require 'os'
 
+{isVisible, getDockSetting} = require './utils'
+
 lastOpenedView = null
 lastActiveElement = null
+
+nextId = 0
 
 module.exports =
 class TerminusView extends View
@@ -26,7 +30,7 @@ class TerminusView extends View
   @content: ->
     @div class: 'terminus terminal-view', outlet: 'terminusView', =>
       @div class: 'panel-divider', outlet: 'panelDivider'
-      @section class: 'input-block', =>
+      if getDockSetting() then null else @section class: 'input-block', =>
         @div outlet: 'toolbar', class: 'btn-toolbar', =>
           @div class: 'btn-group', =>
             @button outlet: 'inputBtn', class: 'btn icon icon-keyboard', click: 'inputDialog'
@@ -39,25 +43,38 @@ class TerminusView extends View
   @getFocusedTerminal: ->
     return Terminal.Terminal.focus
 
+  getURI: -> """atom://terminus/#{@viewId}"""
+
+  getDefaultLocation: -> "bottom"
+
+  getAllowedLocations: -> ["bottom"]
+
+  isPermanentDockItem: -> false
+
   initialize: (@id, @pwd, @statusIcon, @statusBar, @shell, @args=[], @env={}, @autoRun=[]) ->
+    @shouldUseDock = getDockSetting()
+    if @shouldUseDock
+      @viewId = nextId++
+
     @subscriptions = new CompositeDisposable
     @emitter = new Emitter
 
-    @subscriptions.add atom.tooltips.add @closeBtn,
-      title: 'Close'
-    @subscriptions.add atom.tooltips.add @hideBtn,
-      title: 'Hide'
-    @subscriptions.add @maximizeBtn.tooltip = atom.tooltips.add @maximizeBtn,
-      title: 'Fullscreen'
-    @inputBtn.tooltip = atom.tooltips.add @inputBtn,
-      title: 'Insert Text'
+    unless @shouldUseDock
+      @subscriptions.add atom.tooltips.add @closeBtn,
+        title: 'Close'
+      @subscriptions.add atom.tooltips.add @hideBtn,
+        title: 'Hide'
+      @subscriptions.add @maximizeBtn.tooltip = atom.tooltips.add @maximizeBtn,
+        title: 'Fullscreen'
+      @inputBtn.tooltip = atom.tooltips.add @inputBtn,
+        title: 'Insert Text'
 
     @prevHeight = atom.config.get('terminus.style.defaultPanelHeight')
     if @prevHeight.indexOf('%') > 0
       percent = Math.abs(Math.min(parseFloat(@prevHeight) / 100.0, 1))
       bottomHeight = $('atom-panel.bottom').children(".terminal-view").height() or 0
       @prevHeight = percent * ($('.item-views').height() + bottomHeight)
-    @xterm.height 0
+    if not @shouldUseDock then @xterm.height 0
 
     @setAnimationSpeed()
     @subscriptions.add atom.config.onDidChange 'terminus.style.animationSpeed', @setAnimationSpeed
@@ -93,9 +110,11 @@ class TerminusView extends View
       @args.unshift '--login'
 
   attach: ->
-    return if @panel?
-    @panel = atom.workspace.addBottomPanel(item: this, visible: false)
-
+    if @shouldUseDock
+      atom.workspace.open(this)
+    else
+      return if @panel?
+      @panel = atom.workspace.addBottomPanel(item: this, visible: false)
   setAnimationSpeed: =>
     @animationSpeed = atom.config.get('terminus.style.animationSpeed')
     @animationSpeed = 100 if @animationSpeed is 0
@@ -103,11 +122,12 @@ class TerminusView extends View
     @xterm.css 'transition', "height #{0.25 / @animationSpeed}s linear"
 
   updateToolbarVisibility: =>
-    @showToolbar = atom.config.get('terminus.toggles.showToolbar')
-    if @showToolbar
-      @toolbar.css 'display', 'block'
-    else
-      @toolbar.css 'display', 'none'
+    if !@shouldUseDock
+      @showToolbar = atom.config.get('platformio-ide-terminal.toggles.showToolbar')
+      if @showToolbar
+        @toolbar.css 'display', 'block'
+      else
+        @toolbar.css 'display', 'none'
 
   recieveItemOrFile: (event) =>
     event.preventDefault()
@@ -160,6 +180,8 @@ class TerminusView extends View
 
     @ptyProcess.on "terminus:title", (title) =>
       @process = title
+      @emit 'did-change-title'
+      
     @terminal.on "title", (title) =>
       @title = title
 
@@ -172,6 +194,9 @@ class TerminusView extends View
       @input "#{autoRunCommand}#{os.EOL}" if autoRunCommand
       @input "#{command}#{os.EOL}" for command in @autoRun
 
+  onDidDestroy: (callback) ->
+      @emitter.on 'did-destroy', callback
+
   destroy: ->
     @subscriptions.dispose()
     @statusIcon.destroy()
@@ -179,17 +204,20 @@ class TerminusView extends View
     @detachResizeEvents()
     @detachWindowEvents()
 
-    if @panel.isVisible()
-      @hide()
-      @onTransitionEnd => @panel.destroy()
-    else
-      @panel.destroy()
+    unless @shouldUseDock
+      if @panel.isVisible()
+        @hide()
+        @onTransitionEnd => @panel.destroy()
+      else
+        @panel.destroy()
 
     if @statusIcon and @statusIcon.parentNode
       @statusIcon.parentNode.removeChild(@statusIcon)
 
     @ptyProcess?.terminate()
     @terminal?.destroy()
+    @emit 'did-destroy'
+    @emitter.dispose()
 
   maximize: ->
     @subscriptions.remove @maximizeBtn.tooltip
@@ -216,6 +244,8 @@ class TerminusView extends View
 
   open: =>
     lastActiveElement ?= $(document.activeElement)
+
+    if @shouldUseDock then return @openInDock()
 
     if lastOpenedView and lastOpenedView != this
       if lastOpenedView.maximized
@@ -250,7 +280,20 @@ class TerminusView extends View
     @animating = true
     @xterm.height if @maximized then @maxHeight else @prevHeight
 
+  openInDock: =>
+    @statusBar.setActiveTerminalView this
+    @statusIcon.activate()
+    atom.workspace.open(this, activatePane: true)
+    .then =>
+      if not @opened
+        @opened = true
+        @displayTerminal()
+        @xterm.height("100%")
+        @emit "terminusl:terminal-open"
+      else @focus()
+    
   hide: =>
+    if @shouldUseDock then return @hideInDock()
     @terminal?.blur()
     lastOpenedView = null
     @statusIcon.deactivate()
@@ -266,10 +309,23 @@ class TerminusView extends View
     @animating = true
     @xterm.height 0
 
+  hideInDock: =>
+    @terminal?.blur()
+    @statusIcon.deactivate()
+    atom.workspace.hide(this)
+    
   toggle: ->
+    if @shouldUseDock then return @toggleInDock()
+
     return if @animating
 
     if @panel.isVisible()
+      @hide()
+    else
+      @open()
+
+  toggleInDock: =>
+    if isVisible this
       @hide()
     else
       @open()
@@ -508,8 +564,20 @@ class TerminusView extends View
       lastActiveElement.focus()
 
   resizeTerminalToView: ->
+    if @shouldUseDock then return @resizeInDock()
+    
     return unless @panel.isVisible() or @tabView
 
+    {cols, rows} = @getDimensions()
+    return unless cols > 0 and rows > 0
+    return unless @terminal
+    return if @terminal.rows is rows and @terminal.cols is cols
+
+    @resize cols, rows
+    @terminal.resize cols, rows
+
+  resizeInDock: ->
+    if not isVisible(this) then return
     {cols, rows} = @getDimensions()
     return unless cols > 0 and rows > 0
     return unless @terminal
@@ -566,7 +634,10 @@ class TerminusView extends View
       lastOpenedView = null if lastOpenedView == this
 
   getTitle: ->
-    @statusIcon.getName() or "terminus"
+    iconOrDefault = @statusIcon.getName() or "terminus"
+    if @shouldUseDock and @title then return @title
+
+    return iconOrDefault
 
   getIconName: ->
     "terminal"

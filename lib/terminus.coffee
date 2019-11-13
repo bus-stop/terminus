@@ -2,6 +2,10 @@ module.exports =
   statusBar: null
 
   activate: ->
+    atom.config.onDidChange 'terminus.toggles.useDock', (event) =>
+      if @statusBarProvider
+        @deactivate()
+        @consumeStatusBar(@statusBarProvider)
 
   deactivate: ->
     @statusBarTile?.destroy()
@@ -26,6 +30,11 @@ module.exports =
       type: 'object'
       order: 1
       properties:
+        useDock:
+          title: 'Use Bottom Dock'
+          description: 'Should the terminals be rendered in a dock?'
+          type: 'boolean'
+          default: false
         autoClose:
           title: 'Close Terminal on Exit'
           description: 'Should the terminal close if the shell exits?'
