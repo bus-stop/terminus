@@ -10,7 +10,7 @@ module.exports =
   consumeStatusBar: (statusBarProvider) ->
     @statusBarTile = new (require './status-bar')(statusBarProvider)
 
-  provideTerminal: ->
+  provideTerminus: ->
     updateProcessEnv: (variables) ->
       for name, value of variables
         process.env[name] = value
