@@ -68,9 +68,12 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
     "@semantic-release/apm-config": "^6.0.2",
     "atom-jasmine3-test-runner": "^4.3.9",
     "eslint": "^6.6.0",
+    "husky": "3.0.9",
     "semantic-release": "^15.13.30"
   },
   "activationHooks": [
@@ -90,6 +93,19 @@
       "versions": {
         "1.1.1": "provideTerminus"
       }
+    }
+  },
+  "release": {
+    "extends": "@semantic-release/apm-config"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
