@@ -289,7 +289,7 @@ class TerminusView extends View
         @opened = true
         @displayTerminal()
         @xterm.height("100%")
-        @emit "terminusl:terminal-open"
+        @emit "terminus:terminal-open"
       else @focus()
     
   hide: =>
