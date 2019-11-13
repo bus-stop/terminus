@@ -409,7 +409,7 @@ class StatusBar extends View
     fromIndex = parseInt(dataTransfer.getData('from-index'))
     view = @terminalViews[fromIndex]
     view.css "height", ""
-    view.terminal.element.style.height = ""
+    view.terminal.element.style.height = atom.config.get('terminus.style.defaultPanelHeight')
     tabBar = $(event.target).closest('.tab-bar')
 
     view.toggleTabView()
