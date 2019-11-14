@@ -2,7 +2,7 @@
   "name": "terminus",
   "title": "Terminus",
   "main": "./lib/terminus",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "A terminal package for Atom, complete with themes, API and more. A fork of platformio-atom-ide-terminal.",
   "author": "bus-stop and contributors",
   "license": "MIT",
