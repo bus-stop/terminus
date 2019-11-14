@@ -59,6 +59,7 @@
   "scripts": {
     "test": "atom --test spec",
     "lint": "eslint .",
+    "fix": "eslint . --fix",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
