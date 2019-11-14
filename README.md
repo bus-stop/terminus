@@ -25,7 +25,7 @@
 </h5>
 <br>
 
-![demo](https://github.com/bus-stop/terminus/raw/master/resources/demo.gif)
+![demo](https://github.com/bus-stop/terminus/raw/master-old/resources/demo.gif)
 
 *[Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui) with [Atom Material Syntax](https://atom.io/themes/atom-material-syntax) and the included Homebrew theme.*
 
@@ -87,23 +87,23 @@ Not satisfied? Use the following template in your stylesheet:
 
 By hovering over the terminal status icon, you can see which command process is currently running in the terminal.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/terminal_title.png)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/terminal_title.png)
 
 ### Terminal Naming
 
 Need a faster way to figure out which terminal is which? Name your status icons!
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/status-icon_rename.png)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/status-icon_rename.png)
 
 Available via the status icon context menu.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/status-icon_rename-dialog.png)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/status-icon_rename-dialog.png)
 
 ### Color Coding
 
 Color code your status icons!
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/status-icon_color_coding.png)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/status-icon_color_coding.png)
 
 The colors are customizable in the settings, however the color names remain the same in the context menu.
 
@@ -111,7 +111,7 @@ The colors are customizable in the settings, however the color names remain the 
 
 Organize your open terminal instances by dragging and dropping them.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/sorting.gif)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/sorting.gif)
 
 ### Resizable
 
@@ -129,7 +129,7 @@ Dropping a file on the terminal will insert the file path into the input. This w
 
 Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>+<kbd>enter</kbd>.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/insert_selected_text.gif)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/insert_selected_text.gif)
 
 If you have text selected, it will insert your selected text into the active terminal and run it.  
 If you don't have text selected it, will run the text on the line where your cursor is then proceed to the next line.
@@ -138,7 +138,7 @@ If you don't have text selected it, will run the text on the line where your cur
 
 Quickly insert a command to your active terminal by executing the `terminus:insert-text` command.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/insert_text.png)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/insert_text.png)
 
 A dialog will pop up asking for the input to insert. If you have the `Run Inserted Text` option enabled in the settings (default is false), Terminus will automatically run the command for you.
 
@@ -146,7 +146,7 @@ A dialog will pop up asking for the input to insert. If you have the `Run Insert
 
 Support for IME, dead keys and other key combinations via the `Insert Text` dialog box. Just click the keyboard button in the top left of the terminal or set up a keymap to the `terminus:insert-text` command.
 
-![](https://github.com/bus-stop/terminus//raw/master/resources/special_keys.gif)
+![](https://github.com/bus-stop/terminus//raw/master-old/resources/special_keys.gif)
 
 >**Note:** Make sure you have the `Run Inserted Command` toggle off otherwise it will run your inserted text.
 
@@ -156,16 +156,16 @@ Map your terminals to each file or folder you are working on for automatic termi
 
 #### File
 
-![](https://github.com/bus-stop/terminus//raw/master/resources/map_terminals_to_file.gif)
+![](https://github.com/bus-stop/terminus//raw/master-old/resources/map_terminals_to_file.gif)
 
 #### Folder
 
-![](https://github.com/bus-stop/terminus//raw/master/resources/map_terminals_to_folder.gif)
+![](https://github.com/bus-stop/terminus//raw/master-old/resources/map_terminals_to_folder.gif)
 
 Toggling the `Auto Open a New Terminal (For Terminal Mapping)` option will have the mapping create a new terminal automatically for files and folders that don't have a terminal.  
 The toggle is located right under the `Map Terminals To` option.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/map_terminals_to_auto_open.gif)
+![](https://github.com/bus-stop/terminus/raw/master-old/resources/map_terminals_to_auto_open.gif)
 
 ## Commands
 
