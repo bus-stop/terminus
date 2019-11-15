@@ -3,7 +3,7 @@
   "title": "Terminus",
   "main": "./lib/terminus",
   "version": "4.0.0",
-  "description": "A terminal package for Atom, complete with themes, API and more. A fork of platformio-atom-ide-terminal.",
+  "description": "A terminal for Atom, complete with themes, API and more. Now written in JavaScript! A fork of platformio-atom-ide-terminal.",
   "author": "bus-stop and contributors",
   "license": "MIT",
   "homepage": "https://atom.io/packages/terminus",
