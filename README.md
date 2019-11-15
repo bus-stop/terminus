@@ -25,9 +25,9 @@
 </h5>
 <br>
 
-![demo](https://github.com/bus-stop/terminus/raw/master/resources/demo.gif)
+![demo](https://github.com/bus-stop/terminus/raw/master/resources/t-demo.gif)
 
-*[Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui) with [Atom Material Syntax](https://atom.io/themes/atom-material-syntax) and the included Homebrew theme.*
+*[Atom One dark UI theme](https://atom.io/themes/one-dark-ui) with [Atom One Dark Syntax theme](https://atom.io/themes/atom-one-dark-syntax) and the included [One Dark theme.](https://github.com/bus-stop/terminus/styles/themes/one-dark.less)*
 
 # Contributing
 
@@ -67,18 +67,19 @@ Every terminal is loaded with your system’s default initialization files. This
 ### Themes
 
 The terminal is preloaded with several themes that you can choose from.  
-Not satisfied? Use the following template in your stylesheet:
+Not satisfied? Use the following template in your Atom stylesheet and customize colors:
 ```css
 .terminus .xterm {
-  background-color: ;
-  color: ;
+  background-color: #0d0208;
+  color: #00ff41;
 
   ::selection {
-    background-color: ;
+    background-color: #003b00;
+    color: #003b00;
   }
 
   .terminal-cursor {
-    background-color: ;
+    background-color: #00ff41;
   }
 }
 ```
@@ -87,23 +88,23 @@ Not satisfied? Use the following template in your stylesheet:
 
 By hovering over the terminal status icon, you can see which command process is currently running in the terminal.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/terminal_title.png)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t_title.png)
 
 ### Terminal Naming
 
 Need a faster way to figure out which terminal is which? Name your status icons!
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/status-icon_rename.png)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t-status-icon_rename.gif)
 
 Available via the status icon context menu.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/status-icon_rename-dialog.png)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t-status-icon_rename-dialog.png)
 
 ### Color Coding
 
 Color code your status icons!
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/status-icon_color_coding.png)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t-status-icon_color_coding.png)
 
 The colors are customizable in the settings, however the color names remain the same in the context menu.
 
@@ -111,7 +112,7 @@ The colors are customizable in the settings, however the color names remain the 
 
 Organize your open terminal instances by dragging and dropping them.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/sorting.gif)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t-sorting.gif)
 
 ### Resizable
 
@@ -138,7 +139,7 @@ If you don't have text selected it, will run the text on the line where your cur
 
 Quickly insert a command to your active terminal by executing the `terminus:insert-text` command.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/insert_text.png)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t-insert_text.png)
 
 A dialog will pop up asking for the input to insert. If you have the `Run Inserted Text` option enabled in the settings (default is false), Terminus will automatically run the command for you.
 
@@ -156,16 +157,16 @@ Map your terminals to each file or folder you are working on for automatic termi
 
 #### File
 
-![](https://github.com/bus-stop/terminus//raw/master/resources/map_terminals_to_file.gif)
+![](https://github.com/bus-stop/terminus//raw/master/resources/t-map_terminals_to_file.gif)
 
 #### Folder
 
-![](https://github.com/bus-stop/terminus//raw/master/resources/map_terminals_to_folder.gif)
+![](https://github.com/bus-stop/terminus//raw/master/resources/t-map_terminals_to_folder.gif)
 
 Toggling the `Auto Open a New Terminal (For Terminal Mapping)` option will have the mapping create a new terminal automatically for files and folders that don't have a terminal.  
 The toggle is located right under the `Map Terminals To` option.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/map_terminals_to_auto_open.gif)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t-map_terminals_to_auto_open.gif)
 
 ## Commands
 
