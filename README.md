@@ -19,15 +19,18 @@
   <a href="https://david-dm.org/bus-stop/terminus">
     <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=dependencies&style=for-the-badge" alt="dependencies">
   </a>
+  <a href="https://david-dm.org/bus-stop/terminus?type=dev">
+    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devdependencies&style=for-the-badge" alt="dependencies">
+  </a>
 </p>
-<h3 align="center">A terminal for Atom, with themes, API and more... now written in JavaScript!&nbsp;❤️</h3>
+<h3 align="center">A terminal for Atom, with themes, API and more... Now written in JavaScript!&nbsp;❤️</h3>
 <h5 align="center">A fork of <a href="https://github.com/platformio/platformio-atom-ide-terminal">platformio/platformio-atom-ide-terminal<a/>
 </h5>
 <br>
 
 ![demo](https://github.com/bus-stop/terminus/raw/master/resources/t-demo.gif)
 
-*[Atom One dark UI theme](https://atom.io/themes/one-dark-ui) with [Atom One Dark Syntax theme](https://atom.io/themes/atom-one-dark-syntax) and the included [One Dark theme.](https://github.com/bus-stop/terminus/styles/themes/one-dark.less)*
+*[Atom One dark UI theme](https://atom.io/themes/one-dark-ui) with [Atom One Dark Syntax theme](https://atom.io/themes/atom-one-dark-syntax) and the included [One Dark theme.](https://github.com/bus-stop/terminus/blob/master/styles/themes/one-dark.less)*
 
 # Contributing
 
