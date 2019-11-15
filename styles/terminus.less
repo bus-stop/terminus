@@ -5,6 +5,7 @@
 @icon-height: 16px;
 @status-bar-height: 20px;
 @inactive-opacity: 0.5;
+@active-opacity: 1;
 
 .terminus {
   letter-spacing: normal;
@@ -126,9 +127,18 @@
       align-self: center;
       line-height: @status-bar-height;
     }
+    .icon-plus {
+      color: @text-color;
+      &:hover {
+        color: lighten(@text-color, 20%);
+      }
+    }
     .icon-x {
-      color: #9da5b4;
+      color: @text-color;
       justify-content: flex-end;
+      &:hover {
+        color: lighten(@text-color, 20%);
+      }
     }
 
     .status-container {
@@ -148,7 +158,7 @@
         opacity: @inactive-opacity;
         height: 100%;
         &.active {
-          opacity: 1;
+          opacity: @active-opacity;
         }
       }
 
@@ -200,7 +210,7 @@
       opacity: @inactive-opacity;
     }
     100% {
-      opacity: 1;
+      opacity: @active-opacity;
     }
   }
 }
