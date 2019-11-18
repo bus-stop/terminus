@@ -133,7 +133,7 @@ Dropping a file on the terminal will insert the file path into the input. This w
 
 Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>+<kbd>enter</kbd>.
 
-![](https://github.com/bus-stop/terminus/raw/master/resources/insert_selected_text.gif)
+![](https://github.com/bus-stop/terminus/raw/master/resources/t-insert_selected_text.gif)
 
 If you have text selected, it will insert your selected text into the active terminal and run it.  
 If you don't have text selected it, will run the text on the line where your cursor is then proceed to the next line.
@@ -150,7 +150,7 @@ A dialog will pop up asking for the input to insert. If you have the `Run Insert
 
 Support for IME, dead keys and other key combinations via the `Insert Text` dialog box. Just click the keyboard button in the top left of the terminal or set up a keymap to the `terminus:insert-text` command.
 
-![](https://github.com/bus-stop/terminus//raw/master/resources/special_keys.gif)
+![](https://github.com/bus-stop/terminus//raw/master/resources/t-special_keys.gif)
 
 >**Note:** Make sure you have the `Run Inserted Command` toggle off otherwise it will run your inserted text.
 
