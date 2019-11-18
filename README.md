@@ -182,6 +182,6 @@ The toggle is located right under the `Map Terminals To` option.
 | terminus:insert-selected-text | Run the selected text as a command in the active terminal. | <kbd>ctrl</kbd>+<kbd>i</kbd> |
 | terminus:insert-text | Bring up an input box for using IME and special keys. | –––––––––––– |
 | terminus:fullscreen | Toggle fullscreen for active terminal. | –––––––––––– |
-| terminus:close | Close the active terminal. | <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>x</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>x</kbd> |
+| terminus:close | Close the active terminal. | <kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>x</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>x</kbd> |
 | terminus:close-all | Close all terminals. | –––––––––––– |
 | terminus:rename | Rename the active terminal. | –––––––––––– |
