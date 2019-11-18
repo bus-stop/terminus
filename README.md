@@ -179,7 +179,7 @@ The toggle is located right under the `Map Terminals To` option.
 | terminus:toggle | Toggle the last active terminal instance.<br>**Note:** This will create a new terminal if it needs to. | <kbd>ctrl</kbd>+<kbd>\`</kbd><br>Control + Backtick |
 | terminus:prev | Switch to the terminal left of the last active terminal. | <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>j</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>j</kbd> |
 | terminus:next | Switch to the terminal right of the last active terminal. | <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>k</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>k</kbd> |
-| terminus:insert-selected-text | Run the selected text as a command in the active terminal. | <kbd>ctrl</kbd>+<kbd>enter</kbd> |
+| terminus:insert-selected-text | Run the selected text as a command in the active terminal. | <kbd>ctrl</kbd>+<kbd>i</kbd> |
 | terminus:insert-text | Bring up an input box for using IME and special keys. | –––––––––––– |
 | terminus:fullscreen | Toggle fullscreen for active terminal. | –––––––––––– |
 | terminus:close | Close the active terminal. | <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>x</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>x</kbd> |
