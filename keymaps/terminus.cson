@@ -4,18 +4,17 @@
   'cmd-shift-k': 'terminus:next'
   'cmd-shift-x': 'terminus:close'
   'cmd-alt-f': 'terminus:focus'
-  'ctrl-enter': 'terminus:insert-selected-text'
   'ctrl-`': 'terminus:toggle'
-  'ctrl-alt-enter': 'terminus:insert-selected-text'
+  'ctrl-i': 'terminus:insert-selected-text'
 
 '.platform-linux atom-workspace, .platform-win32 atom-workspace':
   'alt-shift-t': 'terminus:new'
   'alt-shift-j': 'terminus:prev'
   'alt-shift-k': 'terminus:next'
   'alt-shift-x': 'terminus:close'
-  'ctrl-enter': 'terminus:insert-selected-text'
   'ctrl-`': 'terminus:toggle'
   'ctrl-alt-f': 'terminus:focus'
+  'ctrl-i': 'terminus:insert-selected-text'
 
 '.platform-darwin .terminus .terminal':
   'cmd-c': 'terminus:copy'
