@@ -1,25 +1,22 @@
 {
   "env": {
+    "browser": true,
+    "commonjs": true,
     "es6": true,
     "node": true,
-    "browser": true,
-    "jasmine": true,
-    "atomtest": true
+    "jasmine": true
+  },
+  "extends": [
+    "standard"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "atom": "readonly"
   },
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 8,
-    "ecmaFeatures": {
-      "impliedStrict": true
-    }
+    "ecmaVersion": 2018
   },
-  "globals": {
-    "atom": false
-  },
-  "extends": "eslint:recommended",
   "rules": {
-    "quotes": "warn",
-    "semi": "error",
-    "indent": ["error", 2, { "SwitchCase": 1 }]
   }
 }
