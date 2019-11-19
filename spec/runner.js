@@ -1,4 +1,4 @@
-const { createRunner } = require("atom-jasmine3-test-runner");
+const { createRunner } = require('atom-jasmine3-test-runner')
 
 module.exports = createRunner({
   random: true,
@@ -6,6 +6,6 @@ module.exports = createRunner({
     atom: true,
     attachToDom: true,
     ci: true,
-    customMatchers: true,
+    customMatchers: true
   }
-});
+})
