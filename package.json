@@ -56,6 +56,14 @@
     "console",
     "powershell"
   ],
+  "providedServices": {
+    "terminusTerminal": {
+      "description": "Terminus Terminal API",
+      "versions": {
+        "1.1.1": "provideTerminus"
+      }
+    }
+  },
   "scripts": {
     "test": "atom --test spec",
     "lint": "eslint .",
@@ -90,14 +98,6 @@
     "status-bar": {
       "versions": {
         "^1.0.0": "consumeStatusBar"
-      }
-    }
-  },
-  "providedServices": {
-    "terminusTerminal": {
-      "description": "Terminus Terminal API",
-      "versions": {
-        "1.1.1": "provideTerminus"
       }
     }
   },
