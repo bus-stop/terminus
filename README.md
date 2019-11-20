@@ -8,22 +8,25 @@
 <br>
 <p align="center">
   <a href="https://github.com/bus-stop/terminus/tags">
-    <img src="https://img.shields.io/github/tag/bus-stop/terminus.svg?label=version&style=for-the-badge" alt="version">
+    <img src="https://img.shields.io/github/tag/bus-stop/terminus.svg?label=current%20version&style=flat-square" alt="version">
   </a>
   <a href="https://github.com/bus-stop/terminus/stargazers">
-    <img src="https://img.shields.io/github/stars/bus-stop/terminus.svg?style=for-the-badge" alt="stars">
+    <img src="https://img.shields.io/github/stars/bus-stop/terminus.svg?style=flat-square" alt="stars">
   </a>
   <a href="https://github.com/bus-stop/terminus/network">
-    <img src="https://img.shields.io/github/forks/bus-stop/terminus.svg?style=for-the-badge" alt="forks">
+    <img src="https://img.shields.io/github/forks/bus-stop/terminus.svg?style=flat-square" alt="forks">
+  </a>
+  <a href="https://github.com/standard/standard">
+    <img src="https://img.shields.io/badge/code_style-standard%20javascript-%23ea682c?&style=flat-square" alt="style guide">
   </a>
   <a href="https://david-dm.org/bus-stop/terminus">
-    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=dependencies&style=for-the-badge" alt="dependencies">
+    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=dependencies&style=flat-square" alt="dependencies">
   </a>
   <a href="https://david-dm.org/bus-stop/terminus?type=dev">
-    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devdependencies&style=for-the-badge" alt="dependencies">
+    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devdependencies&style=flat-square" alt="dependencies">
   </a>
 </p>
-<h3 align="center">A terminal for Atom, with themes, API and more... Now written in JavaScript!&nbsp;❤️</h3>
+<h3 align="center">A terminal for Atom, with themes, API and more... Now coded in JavaScript!&nbsp;❤️</h3>
 <h5 align="center">A fork of <a href="https://github.com/platformio/platformio-atom-ide-terminal">platformio/platformio-atom-ide-terminal<a/>
 </h5>
 <br>
@@ -34,12 +37,11 @@
 
 # Contributing
 
-Terminus is a 100% community driven project, there are no dedicated developers or support, this means if you have a feature request or a bug report, 
-aside from filling an issue report you can help the Terminus project by submitting a pull request or help out with support.
+Terminus is a 100% community driven project, there are no dedicated developers or support, there are a number of ways you can contribute to Terminus. Checkout our [CONTRIBUTING.MD](https://github.com/bus-stop/terminus/blob/master/CONTRIBUTING.md)
 
-We are looking for and need users that can develop to survive, please check out our code and help out where you can...
+We are looking for and need contributors that can also develop, in order to survive as a project, please check out our code and help out where you can...
 
-Thank you.
+Thank you for your consideration.
 
 ## Install
 Ready to install?
@@ -52,11 +54,11 @@ Or navigate to the install tab in Atom’s settings view, and search for Terminu
 
 Terminus stays in the bottom of your editor while you work.
 
-Click on a status icon to toggle that terminal (or <kbd>ctrl</kbd>+<kbd>\`</kbd>). Right click the status icon for a list of available commands. From the right-click menu you can color code the status icon as well as hide or close the terminal instance.
+Click on a status icon to toggle that terminal (or <kbd>ctrl</kbd>-<kbd>\`</kbd>). Right click the status icon for a list of available commands. From the right-click menu you can color code the status icon as well as hide or close the terminal instance.
 
 ### Terminal
 
-You can open the last active terminal with the `terminus:toggle` command (Default: <kbd>ctrl</kbd>+<kbd>\`</kbd>).  If no terminal instances are available, then a new one will be created. The same toggle command is used to hide the currently active terminal.
+You can open the last active terminal with the `terminus:toggle` command (Default: <kbd>ctrl</kbd>-<kbd>\`</kbd>).  If no terminal instances are available, then a new one will be created. The same toggle command is used to hide the currently active terminal.
 
 From there you can begin typing into the terminal. By default the terminal will change directory into the project folder if possible. The default working directory can be changed in the settings to the home directory or to the active file directory.
 
@@ -131,7 +133,7 @@ Dropping a file on the terminal will insert the file path into the input. This w
 
 ### Insert Selected Text
 
-Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>+<kbd>enter</kbd>.
+Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>-<kbd>enter</kbd>.
 
 ![](https://github.com/bus-stop/terminus/raw/master/resources/t-insert_selected_text.gif)
 
@@ -175,13 +177,13 @@ The toggle is located right under the `Map Terminals To` option.
 
 | Command | Action | Default Keybind |
 |---------|--------|:-----------------:|
-| terminus:new | Create a new terminal instance. | <kbd>ctrl</kbd>+<kbd>shift</kbd>+</kbd><kbd>t</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>t</kbd> |
-| terminus:toggle | Toggle the last active terminal instance.<br>**Note:** This will create a new terminal if it needs to. | <kbd>ctrl</kbd>+<kbd>\`</kbd><br>Control + Backtick |
-| terminus:prev | Switch to the terminal left of the last active terminal. | <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>j</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>j</kbd> |
-| terminus:next | Switch to the terminal right of the last active terminal. | <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>k</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>k</kbd> |
-| terminus:insert-selected-text | Run the selected text as a command in the active terminal. | <kbd>ctrl</kbd>+<kbd>enter</kbd> |
-| terminus:insert-text | Bring up an input box for using IME and special keys. | <kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>i</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>i</kbd> |
+| terminus:new | Create a new terminal instance. | <kbd>ctrl</kbd>-<kbd>shift</kbd>-</kbd><kbd>t</kbd><br>or<br><kbd>cmd</kbd>-<kbd>shift</kbd>-<kbd>t</kbd> |
+| terminus:toggle | Toggle the last active terminal instance.<br>**Note:** This will create a new terminal if it needs to. | <kbd>ctrl</kbd>-<kbd>\`</kbd><br>Control + Backtick |
+| terminus:prev | Switch to the terminal left of the last active terminal. | <kbd>ctrl</kbd>-<kbd>shift</kbd>-<kbd>j</kbd><br>or<br><kbd>cmd</kbd>-<kbd>shift</kbd>-<kbd>j</kbd> |
+| terminus:next | Switch to the terminal right of the last active terminal. | <kbd>ctrl</kbd>-<kbd>shift</kbd>-<kbd>k</kbd><br>or<br><kbd>cmd</kbd>-<kbd>shift</kbd>-<kbd>k</kbd> |
+| terminus:insert-selected-text | Run the selected text as a command in the active terminal. | <kbd>ctrl</kbd>-<kbd>enter</kbd> |
+| terminus:insert-text | Bring up an input box for using IME and special keys. | <kbd>alt</kbd>-<kbd>shift</kbd>-<kbd>i</kbd><br>or<br><kbd>cmd</kbd>-<kbd>shift</kbd>-<kbd>i</kbd> |
 | terminus:fullscreen | Toggle fullscreen for active terminal. | –––––––––––– |
-| terminus:close | Close the active terminal. | <kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>x</kbd><br>or<br><kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>x</kbd> |
+| terminus:close | Close the active terminal. | <kbd>alt</kbd>-<kbd>shift</kbd>-<kbd>x</kbd><br>or<br><kbd>cmd</kbd>-<kbd>shift</kbd>-<kbd>x</kbd> |
 | terminus:close-all | Close all terminals. | –––––––––––– |
 | terminus:rename | Rename the active terminal. | –––––––––––– |
