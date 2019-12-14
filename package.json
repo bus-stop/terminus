@@ -80,7 +80,7 @@
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@semantic-release/apm-config": "^6.0.2",
-    "atom-jasmine3-test-runner": "^4.3.9",
+    "atom-jasmine3-test-runner": "^4.3.10",
     "eslint": "^6.7.2",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.19.1",
