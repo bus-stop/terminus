@@ -77,8 +77,8 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.2.0",
-    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/cli": "8.3.3",
+    "@commitlint/config-conventional": "8.3.3",
     "@semantic-release/apm-config": "^6.0.2",
     "atom-jasmine3-test-runner": "^4.3.10",
     "eslint": "^6.8.0",
