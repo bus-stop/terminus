@@ -74,7 +74,7 @@
     "atom-space-pen-views": "^2.2.0",
     "node-pty-prebuilt-multiarch": "^0.9.0",
     "term.js": "https://github.com/bus-stop/term.js/tarball/master",
-    "underscore": "^1.9.1"
+    "underscore": "^1.9.2"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.4",
