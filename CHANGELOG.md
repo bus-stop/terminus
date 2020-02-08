@@ -1,3 +1,10 @@
+## [4.0.4](https://github.com/bus-stop/terminus/compare/v4.0.3...v4.0.4) (2020-02-08)
+
+
+### Bug Fixes
+
+* typo in keymaps fixes [#55](https://github.com/bus-stop/terminus/issues/55) ([4e01a2c](https://github.com/bus-stop/terminus/commit/4e01a2c3ca0b6b7e702a9fe3351d2b2046b1517f))
+
 ## [4.0.3](https://github.com/bus-stop/terminus/compare/v4.0.2...v4.0.3) (2019-11-22)
 
 
