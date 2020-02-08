@@ -6,7 +6,7 @@
   'cmd-alt-f': 'terminus:focus'
   'ctrl-`': 'terminus:toggle'
   'ctrl-i': 'terminus:insert-selected-text'
-  'cmd-shit-i': 'terminus:insert-text'
+  'cmd-shift-i': 'terminus:insert-text'
 
 '.platform-linux atom-workspace, .platform-win32 atom-workspace':
   'alt-shift-t': 'terminus:new'
@@ -16,7 +16,7 @@
   'ctrl-`': 'terminus:toggle'
   'ctrl-alt-f': 'terminus:focus'
   'ctrl-i': 'terminus:insert-selected-text'
-  'alt-shit-i': 'terminus:insert-text'
+  'alt-shift-i': 'terminus:insert-text'
 
 '.platform-darwin .terminus .terminal':
   'cmd-c': 'terminus:copy'
