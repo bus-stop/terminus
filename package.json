@@ -88,7 +88,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "4.2.3",
-    "semantic-release": "^17.0.2"
+    "semantic-release": "^17.0.3"
   },
   "activationHooks": [
     "core:loaded-shell-environment"
