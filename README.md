@@ -133,7 +133,7 @@ Dropping a file on the terminal will insert the file path into the input. This w
 
 ### Insert Selected Text
 
-Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>-<kbd>enter</kbd>.
+Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>-<kbd>i</kbd.
 
 ![](https://github.com/bus-stop/terminus/raw/master/resources/t-insert_selected_text.gif)
 
