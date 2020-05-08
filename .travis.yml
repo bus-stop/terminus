@@ -26,6 +26,7 @@ jobs:
 
     - stage: lint ✨
       script:
+        - nvm install lts/*
         - npm install
         - npm run lint
 
