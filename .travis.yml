@@ -1,5 +1,7 @@
 language: generic
 
+os: linux
+
 env:
   global:
     - CI="true"
@@ -48,8 +50,6 @@ branches:
 
 git:
   depth: 10
-
-sudo: false
 
 dist: xenial
 
