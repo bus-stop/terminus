@@ -1,3 +1,10 @@
+## [4.0.6](https://github.com/bus-stop/terminus/compare/v4.0.5...v4.0.6) (2020-09-03)
+
+
+### Bug Fixes
+
+* **deps:** update deps ([973f414](https://github.com/bus-stop/terminus/commit/973f414b194cba30a62c486a766dc85846028f4c))
+
 ## [4.0.5](https://github.com/bus-stop/terminus/compare/v4.0.4...v4.0.5) (2020-06-01)
 
 
