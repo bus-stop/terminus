@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/bus-stop/terminus/compare/v4.0.6...v4.1.0) (2021-01-02)
+
+
+### Features
+
+* provide terminal service ([b640bec](https://github.com/bus-stop/terminus/commit/b640bec4529055567e84b249bd6730b9c1b09422))
+
 ## [4.0.6](https://github.com/bus-stop/terminus/compare/v4.0.5...v4.0.6) (2020-09-03)
 
 
