@@ -4,7 +4,7 @@
                           ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║██║   ██║███████╗
                           ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██║   ██║╚════██║
                           ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝███████║
-                          ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝ 
+                          ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
 <br>
 <p align="center">
   <a href="https://github.com/bus-stop/terminus/tags">
@@ -133,7 +133,7 @@ Dropping a file on the terminal will insert the file path into the input. This w
 
 ### Insert Selected Text
 
-Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>-<kbd>i</kbd.
+Insert and run selected text from your text editor by running the `terminus:insert-selected-text` command or <kbd>ctrl</kbd>-<kbd>i</kbd>.
 
 ![](https://github.com/bus-stop/terminus/raw/master/resources/t-insert_selected_text.gif)
 
@@ -187,3 +187,25 @@ The toggle is located right under the `Map Terminals To` option.
 | terminus:close | Close the active terminal. | <kbd>alt</kbd>-<kbd>shift</kbd>-<kbd>x</kbd><br>or<br><kbd>cmd</kbd>-<kbd>shift</kbd>-<kbd>x</kbd> |
 | terminus:close-all | Close all terminals. | –––––––––––– |
 | terminus:rename | Rename the active terminal. | –––––––––––– |
+
+## Services
+
+The `terminal` `v1.0.0` service is provided for other packages to interact with Terminus through Atom's [services](http://flight-manual.atom.io/behind-atom/sections/interacting-with-other-packages-via-services/) API.
+
+The `terminal` service provides the following methods:
+
+### `updateProcessEnv(object)`
+
+Update environment variables for any new terminals.
+
+### `run(string[])`
+
+Run commands in a new terminal.
+
+### `open()`
+
+Open a new terminal.
+
+### `getTerminalViews()`
+
+Get the current views for all open terminals.
