@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/bus-stop/terminus/compare/v4.1.0...v4.1.1) (2021-01-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency underscore to ^1.12.0 ([e70e020](https://github.com/bus-stop/terminus/commit/e70e02017eaa931dd0043a5b7e73cefc4aeac560))
+
 # [4.1.0](https://github.com/bus-stop/terminus/compare/v4.0.6...v4.1.0) (2021-01-02)
 
 
