@@ -21,6 +21,7 @@
 '.platform-darwin .terminus .terminal':
   'cmd-c': 'terminus:copy'
   'cmd-v': 'terminus:paste'
+  'cmd-delete': 'terminus:delete-line'
 
 '.platform-linux .terminus .terminal, .platform-win32 .terminus .terminal':
   'alt-v': 'terminus:paste'
