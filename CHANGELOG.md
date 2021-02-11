@@ -1,3 +1,10 @@
+## [4.1.2](https://github.com/bus-stop/terminus/compare/v4.1.1...v4.1.2) (2021-02-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency node-pty-prebuilt-multiarch to ^0.10.0 ([ea04084](https://github.com/bus-stop/terminus/commit/ea040846693bec08ac7ded9d763b2a809fdc6a46))
+
 ## [4.1.1](https://github.com/bus-stop/terminus/compare/v4.1.0...v4.1.1) (2021-01-03)
 
 
