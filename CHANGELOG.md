@@ -1,3 +1,10 @@
+## [4.1.4](https://github.com/bus-stop/terminus/compare/v4.1.3...v4.1.4) (2021-05-12)
+
+
+### Bug Fixes
+
+* fix dropping files onto terminal ([bb242c4](https://github.com/bus-stop/terminus/commit/bb242c46a631643e079e8292662a121e8f5791f2)), closes [#230](https://github.com/bus-stop/terminus/issues/230)
+
 ## [4.1.3](https://github.com/bus-stop/terminus/compare/v4.1.2...v4.1.3) (2021-03-18)
 
 
