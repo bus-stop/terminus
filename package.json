@@ -83,8 +83,8 @@
     "underscore": "^1.13.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
     "@semantic-release/apm-config": "^8.0.0",
     "atom-jasmine3-test-runner": "^5.2.7",
     "eslint": "^7.31.0",
