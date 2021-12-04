@@ -87,7 +87,7 @@
     "@commitlint/config-conventional": "15.0.0",
     "@semantic-release/apm-config": "^9.0.1",
     "atom-jasmine3-test-runner": "^5.2.9",
-    "eslint": "^8.3.0",
+    "eslint": "^8.4.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
