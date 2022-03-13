@@ -1,3 +1,11 @@
+## [4.1.7](https://github.com/bus-stop/terminus/compare/v4.1.6...v4.1.7) (2022-03-13)
+
+
+### Bug Fixes
+
+* development end and project retirement ([5b414a5](https://github.com/bus-stop/terminus/commit/5b414a5cf3b011d0a9d5ea22872b613d3ff34004))
+* remove beta channel which is failing ([3a25b05](https://github.com/bus-stop/terminus/commit/3a25b056206593df9e34a4f55d1adaba38dcfb48))
+
 ## [4.1.6](https://github.com/bus-stop/terminus/compare/v4.1.5...v4.1.6) (2022-02-02)
 
 
