@@ -1,3 +1,10 @@
+## [4.1.8](https://github.com/bus-stop/terminus/compare/v4.1.7...v4.1.8) (2022-03-13)
+
+
+### Bug Fixes
+
+* typo ([9b9ee85](https://github.com/bus-stop/terminus/commit/9b9ee85711b73784bdb0cc2d31ea8589283e5fdd))
+
 ## [4.1.7](https://github.com/bus-stop/terminus/compare/v4.1.6...v4.1.7) (2022-03-13)
 
 
