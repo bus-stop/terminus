@@ -28,7 +28,7 @@
 
 *[Atom One dark UI theme](https://atom.io/themes/one-dark-ui) with [Atom One Dark Syntax theme](https://atom.io/themes/atom-one-dark-syntax) and the included [One Dark theme.](https://github.com/bus-stop/terminus/blob/master/styles/themes/one-dark.less)*
 
-# ANNOUCEMNT
+# ANNOUCEMENT
 
   Terminus development is coming to an end. Since the days it has been forked and decaffeinated, we had hoped to attract talented developers to volunteer and help further modernize the project.
 
