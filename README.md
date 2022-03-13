@@ -1,10 +1,10 @@
 
-                       ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗██╗   ██╗███████╗
-                       ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██║   ██║██╔════╝
-                          ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║██║   ██║███████╗
-                          ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██║   ██║╚════██║
-                          ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝███████║
-                          ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+                        ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗██╗   ██╗███████╗
+                        ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██║   ██║██╔════╝
+                           ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║██║   ██║███████╗
+                           ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██║   ██║╚════██║
+                           ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝███████║
+                           ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
 <br>
 <p align="center">
   <a href="https://github.com/bus-stop/terminus/tags">
@@ -19,21 +19,26 @@
   <a href="https://github.com/standard/standard">
     <img src="https://img.shields.io/badge/code_style-standard%20javascript-%23ea682c?&style=flat-square" alt="style guide">
   </a>
-  <a href="https://david-dm.org/bus-stop/terminus">
-    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=dependencies&style=flat-square" alt="dependencies">
-  </a>
-  <a href="https://david-dm.org/bus-stop/terminus?type=dev">
-    <img src="https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devdependencies&style=flat-square" alt="dependencies">
-  </a>
 </p>
 <h3 align="center">A terminal for Atom, with themes, API and more... Now coded in JavaScript!&nbsp;❤️</h3>
-<h5 align="center">A fork of <a href="https://github.com/platformio/platformio-atom-ide-terminal">platformio/platformio-atom-ide-terminal<a/>
-</h5>
+<h5 align="center">A fork of <a href="https://github.com/platformio/platformio-atom-ide-terminal">platformio/platformio-atom-ide-terminal<a/></h5>
 <br>
 
 ![demo](https://github.com/bus-stop/terminus/raw/master/resources/t-demo.gif)
 
 *[Atom One dark UI theme](https://atom.io/themes/one-dark-ui) with [Atom One Dark Syntax theme](https://atom.io/themes/atom-one-dark-syntax) and the included [One Dark theme.](https://github.com/bus-stop/terminus/blob/master/styles/themes/one-dark.less)*
+
+# ANNOUCEMNT
+
+  Terminus development is coming to an end. Since the days it has been forked and decaffeinated, we had hoped to attract talented developers to volunteer and help further modernize the project.
+
+  To realistically keep this project relevant, modern and operational with all future versions of Atom, `atom-space-pen-views` and `term.js` dependencies need to be replaced -- since neither of which have been maintained for years or alternatively fork such dependencies and modernize them. Either case would require a re-write  Terminus's relevant source code or the dependencies or both. However a modern alternative already exists; it is called [x-terminal](https://github.com/bus-stop/x-terminal).
+
+  **We strongly recommend** that all Terminus users switch to [x-terminal](https://github.com/bus-stop/x-terminal) which is a modern terminal for Atom using relevant and maintained technologies.
+
+  Terminus works with Atom 1.60.0 and will likely work with any minor and patch releases to the 1.6x.x Atom release branch and then stability and operation can no longer be guaranteed with future Atom versions.
+  
+  Apologies to all our users for any inconviniences caused.
 
 # Contributing
 
